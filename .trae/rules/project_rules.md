@@ -40,6 +40,7 @@ This document outlines the core architectural principles and development practic
 - **Progressive Enhancement**: Build a solid, functional base that works well, then enhance it with advanced features.
 - **Performance**: Optimize for fast load times and smooth user experiences.
 - **Accessibility**: Ensure the application is usable by everyone, regardless of ability.
+- **Content Source**: All website copy MUST be sourced directly from `website_copy_structure.md` to ensure consistency and adherence to approved messaging.
 
 ## 3. Implementation Phases (High-Level)
 
