@@ -36,7 +36,7 @@ This document outlines the core architectural principles and development practic
 - **KISS (Keep It Simple, Stupid)**:
   - Favor minimalist abstractions and straightforward solutions over overly complex patterns.
   - Ensure code is easy to understand, maintain, and debug.
-- **Content First**: Prioritize content and structural integrity before layering on complex animations and interactivity.
+- **Content First**: Prioritize content and structural integrity, including layout, styling, copy, and media (images, videos), before layering on complex animations and interactivity.
 - **Progressive Enhancement**: Build a solid, functional base that works well, then enhance it with advanced features.
 - **Performance**: Optimize for fast load times and smooth user experiences.
 - **Accessibility**: Ensure the application is usable by everyone, regardless of ability.
@@ -62,8 +62,10 @@ This document outlines the core architectural principles and development practic
 
 - **Agile Approach**: Follow an agile methodology, likely with short sprints (e.g., 1-2 weeks) to allow for iterative development and feedback.
 - **Version Control**: Use Git for version control.
-  - Maintain a clean commit history with descriptive commit messages.
-  - Utilize feature branches for new development, merging into `main` via pull requests.
+  - **Branching Strategy**: For each development session or sprint, create a new feature branch from `main`.
+  - **Workflow**: Work on the feature branch, commit changes, and at the end of the session, merge the feature branch back into `main` (preferably via a pull request for review).
+  - **Clean History**: Maintain a clean commit history with descriptive commit messages.
+  - **Main Branch**: Ensure the `main` branch always reflects a stable, deployable state.
 - **Documentation**: Keep documentation up-to-date and relevant.
   - This `project_rules.md` file will serve as a central reference.
   - Consider additional documentation for complex features, API integrations, or deployment steps.
