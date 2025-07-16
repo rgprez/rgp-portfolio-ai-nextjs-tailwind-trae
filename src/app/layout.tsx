@@ -14,12 +14,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ramon G. Perez - Portfolio",
-  description: "Professional portfolio showcasing my projects and skills as a developer",
+  description:
+    "Professional portfolio showcasing my projects and skills as a developer",
   keywords: ["portfolio", "developer", "web development", "projects"],
   authors: [{ name: "Ramon G. Perez" }],
   openGraph: {
     title: "Ramon G. Perez - Portfolio",
-    description: "Professional portfolio showcasing my projects and skills as a developer",
+    description:
+      "Professional portfolio showcasing my projects and skills as a developer",
     url: "https://yourdomain.com",
     siteName: "Ramon G. Perez Portfolio",
     images: [
@@ -35,7 +37,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ramon G. Perez - Portfolio",
-    description: "Professional portfolio showcasing my projects and skills as a developer",
+    description:
+      "Professional portfolio showcasing my projects and skills as a developer",
     images: ["https://yourdomain.com/og-image.jpg"],
   },
 };

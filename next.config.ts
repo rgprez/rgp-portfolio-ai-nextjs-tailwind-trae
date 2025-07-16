@@ -10,20 +10,19 @@ const nextConfig: NextConfig = {
       // Example: { hostname: 'example.com' }
     ],
   },
-    async headers() {
+  async headers() {
     return [
       {
-        source: '/(.*)',
+        source: "/(.*)",
         headers: [
           {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
           },
         ],
       },
     ];
   },
-
 };
 
 export default nextConfig;

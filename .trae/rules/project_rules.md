@@ -62,7 +62,7 @@ This document outlines the core architectural principles and development practic
 
 - **Agile Approach**: Follow an agile methodology, likely with short sprints (e.g., 1-2 weeks) to allow for iterative development and feedback.
 - **Version Control**: Use Git for version control.
-  - **Branching Strategy**: For each development session or sprint, create a new feature branch from `main`.
+  - **Branching Strategy**: For each development session or sprint, create a new feature branch from `main` using a descriptive naming convention like `YYYY-MM-DD-todays-task-title/description`.
   - **Workflow**: Work on the feature branch, commit changes, and at the end of the session, merge the feature branch back into `main` (preferably via a pull request for review).
   - **Clean History**: Maintain a clean commit history with descriptive commit messages.
   - **Main Branch**: Ensure the `main` branch always reflects a stable, deployable state.
