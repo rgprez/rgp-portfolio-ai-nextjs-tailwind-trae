@@ -1,46 +1,23 @@
 "use client";
 import React from "react";
-import dynamic from "next/dynamic";
 import Image from "next/image";
-import { fadeInUp } from "../animations/variants";
 
-const MotionSection = dynamic(
-  () => import("motion/react").then((mod) => mod.motion.section),
-  { ssr: false }
-);
-const MotionH3 = dynamic(
-  () => import("motion/react").then((mod) => mod.motion.h3),
-  { ssr: false }
-);
-const MotionDiv = dynamic(
-  () => import("motion/react").then((mod) => mod.motion.div),
-  { ssr: false }
-);
-const MotionP = dynamic(
-  () => import("motion/react").then((mod) => mod.motion.p),
-  { ssr: false }
-);
 
 const DemosSection = () => {
   return (
-    <MotionSection
+    <section
       className="py-16"
-      initial="hidden"
-      animate="visible"
-      variants={fadeInUp}
     >
-      <MotionH3
+      <h2
         className="text-3xl font-bold text-gray-900 text-center mb-8"
-        variants={fadeInUp}
       >
         Demos & Case Studies
-      </MotionH3>
-      <MotionDiv
+      </h2>
+      <div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-        variants={fadeInUp}
       >
         {/* Demo 1 */}
-        <MotionDiv className="bg-white rounded-lg shadow-md p-6">
+        <div className="bg-white rounded-lg shadow-md p-6">
           <Image
             src="/images/demo-thumb-1.jpg"
             alt="Demo Thumbnail 1"
@@ -58,10 +35,10 @@ const DemosSection = () => {
           <a href="#" className="text-blue-600 hover:underline">
             View Demo
           </a>
-        </MotionDiv>
+        </div>
 
         {/* Demo 2 */}
-        <MotionDiv className="bg-white rounded-lg shadow-md p-6">
+        <div className="bg-white rounded-lg shadow-md p-6">
           <Image
             src="/images/demo-thumb-2.jpg"
             alt="Demo Thumbnail 2"
@@ -79,10 +56,10 @@ const DemosSection = () => {
           <a href="#" className="text-blue-600 hover:underline">
             View Demo
           </a>
-        </MotionDiv>
+        </div>
 
         {/* Demo 3 */}
-        <MotionDiv className="bg-white rounded-lg shadow-md p-6">
+        <div className="bg-white rounded-lg shadow-md p-6">
           <Image
             src="/images/demo-thumb-3.jpg"
             alt="Demo Thumbnail 3"
@@ -100,9 +77,9 @@ const DemosSection = () => {
           <a href="#" className="text-blue-600 hover:underline">
             View Demo
           </a>
-        </MotionDiv>
-      </MotionDiv>
-    </MotionSection>
+        </div>
+      </div>
+    </section>
   );
 };
 

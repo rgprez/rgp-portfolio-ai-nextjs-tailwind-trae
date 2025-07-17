@@ -6,12 +6,14 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lighthouse": "npx lighthouse http://localhost:3000 --only-categories=accessibility,seo --output json --output-path ./reports/lighthouse.json --tmp-dir ./tmp --disable-full-page-screenshot true"
   },
   "dependencies": {
     "@fontsource/geist-mono": "^5.2.6",
     "@fontsource/geist-sans": "^5.2.5",
     "@types/three": "^0.178.1",
+    "chrome-launcher": "^1.2.0",
     "motion": "^12.23.6",
     "next": "15.4.1",
     "react": "19.1.0",
@@ -26,6 +28,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.4.1",
+    "lighthouse": "^12.8.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
